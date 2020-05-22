@@ -1,0 +1,183 @@
+from app import app
+import requests
+from flask import Flask, jsonify, abort, make_response, request, url_for
+from flask_httpauth import HTTPBasicAuth
+from flask_sqlalchemy import SQLAlchemy
+auth = HTTPBasicAuth()
+
+app = Flask(__name__)
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['SECRET_KEY'] = 'mysecret'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:cristonala321@127.0.0.1/pokemon'
+db = SQLAlchemy(app)
+
+class Favs_table(db.Model):
+    __tablename__ = 'favs_table'
+    id = db.Column('id', db.Integer, primary_key=True)
+    name = db.Column('Name', db.Unicode)
+    poketype = db.Column('Poketype', db.Unicode)
+    def toDict(self):
+        return { c.key: getattr(self, c.key) for c in inspect(self).mapper.column_attrs }
+
+tasks = [
+    {
+        'id': 1,
+        'title': u'Buy groceries',
+        'description': u'Milk, Cheese, Pizza, Fruit, Tylenol',
+        'done': False
+    },
+    {
+        'id': 2,
+        'title': u'Learn Python',
+        'description': u'Need to find a good Python tutorial on the web',
+        'done': False
+    }
+]
+
+@app.route('/poketype/normal', methods=['GET'])
+def get_normal():
+    r = requests.get('https://pokeapi.co/api/v2/type/normal/')
+    return jsonify(r.json())
+@app.route('/poketype/fighting', methods=['GET'])
+def get_fighting():
+    r = requests.get('https://pokeapi.co/api/v2/type/fighting/')
+    return jsonify(r.json())
+@app.route('/poketype/flying', methods=['GET'])
+def get_flying():
+    r = requests.get('https://pokeapi.co/api/v2/type/flying/')
+    return jsonify(r.json())
+@app.route('/poketype/poison', methods=['GET'])
+def get_poison():
+    r = requests.get('https://pokeapi.co/api/v2/type/poison/')
+    return jsonify(r.json())
+@app.route('/poketype/ground', methods=['GET'])
+def get_ground():
+    r = requests.get('https://pokeapi.co/api/v2/type/ground/')
+    return jsonify(r.json())
+@app.route('/poketype/rock', methods=['GET'])
+def get_rock():
+    r = requests.get('https://pokeapi.co/api/v2/type/rock/')
+    return jsonify(r.json())
+@app.route('/poketype/bug', methods=['GET'])
+def get_bug():
+    r = requests.get('https://pokeapi.co/api/v2/type/bug/')
+    return jsonify(r.json())
+@app.route('/poketype/ghost', methods=['GET'])
+def get_ghost():
+    r = requests.get('https://pokeapi.co/api/v2/type/ghost/')
+    return jsonify(r.json())
+@app.route('/poketype/steel', methods=['GET'])
+def get_steel():
+    r = requests.get('https://pokeapi.co/api/v2/type/steel/')
+    return jsonify(r.json())
+@app.route('/poketype/fire', methods=['GET'])
+def get_fire():
+    r = requests.get('https://pokeapi.co/api/v2/type/fire/')
+    return jsonify(r.json())
+@app.route('/poketype/water', methods=['GET'])
+def get_water():
+    r = requests.get('https://pokeapi.co/api/v2/type/water/')
+    return jsonify(r.json())
+@app.route('/poketype/grass', methods=['GET'])
+def get_grass():
+    r = requests.get('https://pokeapi.co/api/v2/type/grass/')
+    return jsonify(r.json())
+@app.route('/poketype/electric', methods=['GET'])
+def get_electric():
+    r = requests.get('https://pokeapi.co/api/v2/type/electric/')
+    return jsonify(r.json())
+@app.route('/poketype/psychic', methods=['GET'])
+def get_psychic():
+    r = requests.get('https://pokeapi.co/api/v2/type/psychic/')
+    return jsonify(r.json())
+@app.route('/poketype/ice', methods=['GET'])
+def get_ice():
+    r = requests.get('https://pokeapi.co/api/v2/type/ice/')
+    return jsonify(r.json())
+@app.route('/poketype/dragon', methods=['GET'])
+def get_dragon():
+    r = requests.get('https://pokeapi.co/api/v2/type/dragon/')
+    return jsonify(r.json())
+@app.route('/poketype/dark', methods=['GET'])
+def get_dark():
+    r = requests.get('https://pokeapi.co/api/v2/type/dark/')
+    return jsonify(r.json())
+@app.route('/poketype/fairy', methods=['GET'])
+def get_fairy():
+    r = requests.get('https://pokeapi.co/api/v2/type/fairy/')
+    return jsonify(r.json())
+@app.route('/poketype/unknown', methods=['GET'])
+def get_unknown():
+    r = requests.get('https://pokeapi.co/api/v2/type/unknown/')
+    return jsonify(r.json())
+@app.route('/poketype/shadow', methods=['GET'])
+def get_shadow():
+    r = requests.get('https://pokeapi.co/api/v2/type/shadow/')
+    return jsonify(r.json())
+@app.route('/favs', methods=['GET'])
+def get_table():
+    favs = Pokemon.query.all()
+    favsArr = []
+    for fav in favs:
+        favsArr.append(fav.toDict())
+    return jsonify(favsArr)
+@app.route('/todo/api/v1.0/tasks/<int:task_id>', methods=['GET'])
+def get_task(task_id):
+    task = [task for task in tasks if task['id'] == task_id]
+    if len(task) == 0:
+        abort(404)
+    return jsonify({'task': task[0]})
+@app.route('/todo/api/v1.0/tasks/<int:task_id>', methods=['PUT'])
+@auth.login_required
+def update_task(task_id):
+    task = [task for task in tasks if task['id'] == task_id]
+    if len(task) == 0:
+        abort(404)
+    if not request.json:
+        abort(400)
+    if 'title' in request.json and type(request.json['title']) != unicode:
+        abort(400)
+    if 'description' in request.json and type(request.json['description']) is not unicode:
+        abort(400)
+    if 'done' in request.json and type(request.json['done']) is not bool:
+        abort(400)
+    task[0]['title'] = request.json.get('title', task[0]['title'])
+    task[0]['description'] = request.json.get('description', task[0]['description'])
+    task[0]['done'] = request.json.get('done', task[0]['done'])
+    return jsonify({'task': task[0]})
+@app.route('/todo/api/v1.0/tasks', methods=['POST'])
+@auth.login_required
+def create_task():
+    if not request.json or not 'title' in request.json:
+        abort(400)
+    task = {
+        'id': tasks[-1]['id'] + 1,
+        'title': request.json['title'],
+        'description': request.json.get('description', ""),
+        'done': False
+    }
+    tasks.append(task)
+    return jsonify({'task': task}), 201
+@app.route('/todo/api/v1.0/tasks/<int:task_id>', methods=['DELETE'])
+@auth.login_required
+def delete_task(task_id):
+    task = [task for task in tasks if task['id'] == task_id]
+    if len(task) == 0:
+        abort(404)
+    tasks.remove(task[0])
+    return jsonify({'result': True}) 
+@app.errorhandler(404)
+def not_found(error):
+    return make_response(jsonify({'error': 'Not found'}), 404)
+
+@auth.get_password
+def get_password(username):
+    if username == 'pikachu':
+        return 'electric'
+    return None
+@auth.error_handler
+def unauthorized():
+    return make_response(jsonify({'error': 'Unauthorized access'}), 401)
+
+if __name__ == '__main__':
+    app.run(debug=True)

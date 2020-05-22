@@ -1,0 +1,20 @@
+platform :ios, '11.4'
+use_frameworks!
+
+target 'App Project 3' do
+  pod 'Alamofire', '~> 4.8'
+  pod 'SwiftyJSON'
+
+  # Pods for App Project 3
+
+  target 'App Project 3Tests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'App Project 3UITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
