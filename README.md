@@ -54,7 +54,7 @@ However, if the move the user is trying to add already exists in the selected ty
 
 <img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/transp.png" width="35"><img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/Screen%20Shot%202020-05-23%20at%202.11.43%20AM.png" width="200">
 
-### Successful POST or DELETE (bad credentials):
+### Unsuccessful POST or DELETE (bad credentials):
 1. Error Light:
 
 <img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/transp.png" width="35"><img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/Screen%20Shot%202020-05-23%20at%202.11.54%20AM.png" width="100">
