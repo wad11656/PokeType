@@ -43,30 +43,30 @@ However, if the move the user is trying to add already exists in the selected ty
 ### Successful HTTP GET, POST, or DELETE:
 1. Processing Light:
 
-<img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/transp.png" width="20"><img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/Screen%20Shot%202020-05-23%20at%202.11.09%20AM.png" width="100">
+<img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/transp.png" width="25"><img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/Screen%20Shot%202020-05-23%20at%202.11.09%20AM.png" width="100">
    
 1. Success Light:
 
-<img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/transp.png" width="20"><img src="https://github.com/wad11656/PokeType/blob/master/README%20media/Screen%20Shot%202020-05-23%20at%202.11.28%20AM.png" width="100">
+<img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/transp.png" width="25"><img src="https://github.com/wad11656/PokeType/blob/master/README%20media/Screen%20Shot%202020-05-23%20at%202.11.28%20AM.png" width="100">
  
 1. Success Message:
 
-<img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/transp.png" width="20"><img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/Screen%20Shot%202020-05-23%20at%202.11.43%20AM.png" width="200">
+<img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/transp.png" width="25"><img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/Screen%20Shot%202020-05-23%20at%202.11.43%20AM.png" width="200">
 
 ### Unsuccessful POST or DELETE (bad credentials):
 1. Error Light:
 
-<img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/transp.png" width="20"><img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/Screen%20Shot%202020-05-23%20at%202.11.54%20AM.png" width="100">
+<img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/transp.png" width="25"><img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/Screen%20Shot%202020-05-23%20at%202.11.54%20AM.png" width="100">
  
 1. Bad Credentials Message:
 
-<img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/transp.png" width="20"><img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/Screen%20Shot%202020-05-23%20at%202.12.05%20AM.png" width="200">
+<img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/transp.png" width="25"><img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/Screen%20Shot%202020-05-23%20at%202.12.05%20AM.png" width="200">
 
 ## Unsuccessful POST (entry already exists):
 1.	Error Light:
 
-<img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/transp.png" width="20"><img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/Screen%20Shot%202020-05-23%20at%202.12.20%20AM.png" width="100">
+<img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/transp.png" width="25"><img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/Screen%20Shot%202020-05-23%20at%202.12.20%20AM.png" width="100">
  
 2.	Entry Already Exists Message:
 
-<img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/transp.png" width="20"><img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/Screen%20Shot%202020-05-23%20at%202.12.35%20AM.png" width="200"></center>
+<img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/transp.png" width="25"><img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/Screen%20Shot%202020-05-23%20at%202.12.35%20AM.png" width="200"></center>
