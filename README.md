@@ -44,17 +44,16 @@ However, if the move the user is trying to add already exists in the selected ty
 <img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/Screen%20Shot%202020-05-23%20at%202.46.45%20AM.png" width="370">
 
 ## LED & LCD Behavior
-### All RESTful API request to the Raspberry Pi:
+### Successful HTTP GET, POST, or DELETE:
 1. Processing Light:
 
 <img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/transp.png" width="35"><img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/Screen%20Shot%202020-05-23%20at%202.11.09%20AM.png" width="100">
 
-### Successful HTTP GET, POST, or DELETE:
-1. Success Light:
+2. Success Light:
 
 <img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/transp.png" width="35"><img src="https://github.com/wad11656/PokeType/blob/master/README%20media/Screen%20Shot%202020-05-23%20at%202.11.28%20AM.png" width="100">
  
-2. Success Message:
+3. Success Message:
 
 <img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/transp.png" width="35"><img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/Screen%20Shot%202020-05-23%20at%202.11.43%20AM.png" width="200">
 
