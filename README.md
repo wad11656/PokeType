@@ -5,7 +5,7 @@ This app allows users to use their **iPhone** to store a list of their favorite 
 
 ## Structure
 1. **An iPhone app** built using **XCode** + **Swift**
-1. **A Raspberry Pi** that hosts a MySQL database
+1. **A MySQL database** hosted on a Raspberry Pi
    1. The MySQL database stores tables containing the user's "favorite moves" for each Pokémon type.
 1. **A custom-built API web service** running on the Raspberry Pi
    1. The API is built using a Python RESTful API framework called **Flask**.
