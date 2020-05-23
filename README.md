@@ -13,7 +13,7 @@ This app allows users to use their **iPhone** to store a list of their favorite 
 1. **LED lights** that illuminate upon RESTful API requests to the Raspberry Pi
    1. The LED's are on a breadboard.
    1. The Pi is connected to the breadboard via its GPIO (general-purpose input/output) pins.
-1. **An LCD screen** that displays a message indicating success or failure upon each RESTful API request to the Pi.
+1. **An LCD screen** that displays a message indicating success or failure upon each RESTful API request to the Pi
    1. The LCD is also on the breadboard.
    1. The Pi also communicates with the LCD through the breadboard via the Pi's GPIO pins.
 
