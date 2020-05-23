@@ -47,19 +47,19 @@ However, if the move the user is trying to add already exists in the selected ty
 1. Success Light:
 <img src="https://github.com/wad11656/PokeType/blob/master/README%20media/Screen%20Shot%202020-05-23%20at%202.11.28%20AM.png" width="100">
  
-1. LCD Success Message:
+1. Success Message:
 <img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/Screen%20Shot%202020-05-23%20at%202.11.43%20AM.png" width="100">
 
 ### Unsuccessful POST or DELETE (bad credentials):
 1. Error Light:
 <img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/Screen%20Shot%202020-05-23%20at%202.11.54%20AM.png" width="100">
  
-1. LCD Bad Credentials Message:
+1. Bad Credentials Message:
 <img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/Screen%20Shot%202020-05-23%20at%202.12.05%20AM.png" width="100">
 
 ## Entry already exists:
 1.	Error Light:
 <img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/Screen%20Shot%202020-05-23%20at%202.12.20%20AM.png" width="100">
  
-2.	LCD Entry Already Exists Message:
-<img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/Screen%20Shot%202020-05-23%20at%202.12.35%20AM.png" width="100">
+2.	Entry Already Exists Message:
+<center><img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/Screen%20Shot%202020-05-23%20at%202.12.35%20AM.png" width="100"></center>
