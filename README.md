@@ -15,7 +15,7 @@ This app allows users to use their **iPhone** to store a list of their favorite 
    1. The Pi is connected to the breadboard via its GPIO (general-purpose input/output) pins.
 1. **An LCD screen** that displays a message indicating success or failure upon each RESTful API request to the Pi.
    1. The LCD is also on the breadboard.
-   1. The Pi also communicates with the LCD via its GPIO pins.
+   1. The Pi also communicates with the LCD through the breadboard via the Pi's GPIO pins.
 
 ## Functionality
 ### Screen 1 – The Start Screen
