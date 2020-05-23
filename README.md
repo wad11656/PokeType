@@ -37,7 +37,7 @@ The iPhone first makes an **HTTP GET** request to Pokéapi to retrieve a list of
 When the user taps one of the moves on the list, they are prompted to enter credentials. When the correct credentials are entered, an **HTTP POST** request is sent to the Pi, which adds the move to the selected type’s Favorites table. The iPhone then displays the **Favorites List** screen, which shows the list of favorites for the selected type, including the newly-added move.
 However, if the move the user is trying to add already exists in the selected type’s Favorites table within the MySQL database, then the Raspberry Pi’s **HTTP POST** request will send back a JSON response that triggers the iPhone app to notify the user that the entry already exists.
 
-<img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/Screen%20Shot%202020-05-23%20at%202.42.49%20AM.png" width="370">
+<img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/Screen%20Shot%202020-05-23%20at%202.44.48%20AM.png" width="370">
 
 ## LED & LCD Behavior
 ### Successful HTTP GET, POST, or DELETE:
