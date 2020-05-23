@@ -40,11 +40,12 @@ However, if the move the user is trying to add already exists in the selected ty
 <img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/Screen%20Shot%202020-05-23%20at%202.46.45%20AM.png" width="370">
 
 ## LED & LCD Behavior
-* Processing Light:
+### Upon any RESTful API request to the Pi:
+1. Processing Light:
 
 <img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/transp.png" width="35"><img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/Screen%20Shot%202020-05-23%20at%202.11.09%20AM.png" width="100">
 
-### Successful HTTP GET, POST, or DELETE:
+### Upon successful HTTP GET, POST, or DELETE:
 1. Success Light:
 
 <img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/transp.png" width="35"><img src="https://github.com/wad11656/PokeType/blob/master/README%20media/Screen%20Shot%202020-05-23%20at%202.11.28%20AM.png" width="100">
@@ -53,7 +54,7 @@ However, if the move the user is trying to add already exists in the selected ty
 
 <img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/transp.png" width="35"><img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/Screen%20Shot%202020-05-23%20at%202.11.43%20AM.png" width="200">
 
-### Unsuccessful POST or DELETE (bad credentials):
+### Upon unsuccessful POST or DELETE (bad credentials):
 1. Error Light:
 
 <img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/transp.png" width="35"><img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/Screen%20Shot%202020-05-23%20at%202.11.54%20AM.png" width="100">
@@ -62,7 +63,7 @@ However, if the move the user is trying to add already exists in the selected ty
 
 <img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/transp.png" width="35"><img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/Screen%20Shot%202020-05-23%20at%202.12.05%20AM.png" width="200">
 
-## Unsuccessful POST (entry already exists):
+## Upon unsuccessful POST (entry already exists):
 1.	Error Light:
 
 <img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/transp.png" width="35"><img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/Screen%20Shot%202020-05-23%20at%202.12.20%20AM.png" width="100">
