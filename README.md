@@ -14,11 +14,11 @@ This app allows users to use their **iPhone** to store a list of their favorite 
 1. **An LCD screen** that displays a message indicating success or failure upon each RESTful API request to the Pi.
 
 ## Functionality
-### Screen 1 – Start Screen
+### Screen 1 – The Start Screen
 The iPhone makes an **HTTP GET** request to PokéAPI to receive and parse the JSON of all the different Pokémon move types. The **IP** button in the top-right of the screen is used to specify the IP address of the Raspberry Pi.
 The user taps a type to proceed to the next screen.
 
-<img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/Screen%20Shot%202020-05-23%20at%202.09.08%20AM.png" width="400">
+<img src="https://raw.githubusercontent.com/wad11656/PokeType/master/README%20media/Screen%20Shot%202020-05-23%20at%202.09.08%20AM.png" width="300">
 
 ### Screen 2 – Strengths & Weaknesses
 The iPhone makes an **HTTP GET** request to PokéAPI to receive and parse the JSON of the strengths and weaknesses of the selected Pokémon move type.
