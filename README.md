@@ -17,6 +17,7 @@ This app allows users to use their **iPhone** to store a list of their favorite 
 ### Screen 1 – Start Screen
 The iPhone makes an **HTTP GET** request to PokéAPI to receive and parse the JSON of all the different Pokémon move types. The **IP** button in the top-right of the screen is used to specify the IP address of the Raspberry Pi.
 The user taps a type to proceed to the next screen.
+
 ![Screen1](/README%20media/Screen%20Shot%202020-05-23%20at%202.09.08 AM.png")
 
 ### Screen 2 – Strengths & Weaknesses
